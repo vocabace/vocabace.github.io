@@ -1,0 +1,253 @@
+/*
+* Author: Adam Lacey / Arturas Lebedevas
+* Assignment: Minor Project – VocabAce
+* Student ID: Adam: D14126301 Arturas:D14126309
+* Date  : 2015/01/25
+* Ref: http://getbootstrap.com/css/#grid-media-queries
+*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* SupNav - above the navbar area */
+.supnav .head {
+  display: none;
+  position: relative;
+  top: 35px;
+}
+
+.supnav .head.head-second {
+  text-align: right;
+}
+
+.supnav .head img {
+  height: 75px;
+}
+
+.supnav .head.bald img {
+  height: 90px;
+}
+
+.supnav .head .word {
+  display: none;
+  position: absolute;
+  font-family: 'Amatic SC', cursive;
+  color: #64c8f1;
+}
+
+.supnav {
+  margin: 0.5em 0;
+}
+
+.supnav .logo {
+  text-decoration: none;
+  outline: none;
+}
+.supnav .logo img {
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .supnav .head {
+    display: block;
+  }
+  .supnav .head.head-first .word {
+    display: inline;
+    top: 0;
+    left: 70px;
+  }
+  .supnav .head.bald .word {
+    top: -10px;
+  }
+  .supnav .head.head-first {
+    top: 35px;
+  }
+  .supnav .head.bald {
+    top: 25px;
+  }
+  .supnav .head.head-second {
+    top: 70px;
+  }
+  .supnav .logo img {
+    height: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-head {
+    font-size: 1.5em;
+  }
+  .supnav .head.head-second .word {
+    display: inline;
+    top: 0;
+    right: 70px;
+  }
+  .supnav .head.head-second {
+    top: 30px;
+  }
+}
+
+.button {
+  display: block;
+  margin: 1.5rem 0;
+  background-color: #D9E040;
+  color: #ffffff;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.188em;
+  text-align: center;
+}
+
+.button:focus,
+.button:hover,
+.button:active {
+  background-color: #f2f2f2;
+  color: #64C8F1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.188em;
+  text-align: center;
+}
+
+.button.selected {
+  background-color: #64C8F1;
+}
+
+.button.selected:hover {
+  background-color: #f2f2f2;
+}
+
+.call-to-action {
+  margin: 1.5rem 0;
+}
+
+.navbar-vocabace {
+  background-color: #64c8f1;
+  background-image: url('/image/doodle.png');
+}
+
+.navbar-vocabace .navbar-toggle {
+  border: none;
+}
+
+.navbar-vocabace .navbar-toggle .icon-bar {
+  background-color: #fff;
+  margin: 2px;
+  height: 4px;
+}
+
+.navbar-nav {
+  font-weight: bold;
+  font-size: 1.250em;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+.navbar-vocabace .navbar-brand {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 18px;
+  font-family: 'Amatic SC', cursive;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .navbar-vocabace .navbar-brand {
+    font-size: 40px;
+    padding: 15px;
+  }
+}
+
+.nav>li>a:hover {
+  color: #64c8f1;
+}
+
+.navbar-nav a {
+  color: #fff;
+}
+
+.footer {
+  background-image: url('/image/footer.png');
+  background-color: #ffffff;
+  text-align: center;
+  background-repeat: repeat;
+  height: 43px;
+}
+
+.footer a {
+  color: #000;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.footerText {
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: 'Amatic SC', cursive;
+  color: black;
+  text-align: center;
+  line-height: 43px;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 86px;
+  }
+
+  .footerText {
+    font-size: 2.2em;
+    line-height: 86px;
+  }
+}
+
+.blue {
+  font-weight: bold;
+  font-family: 'Amatic SC', cursive;
+  color: #64C8F1;
+}
+
+.vocab {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5em;
+}
+
+.social {
+ color: #64C8F1;
+ text-align: center;
+ font-size: 1.5em;
+ margin: 10px;
+}
+
+.ace1 {
+ width:40px;
+ height: 40px;
+ position: relative;
+ top: -0.6em;
+ left:-0.3em;
+}
+
+@media (min-width: 992px) {
+  .ace1 {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.ace2 {
+ width: 24px;
+ height: 24px;
+ position: relative;
+ top: -0.8em;
+ left:-0.2em;
+}
+
+.speech {
+  width: 24px;
+ height: 24px;
+ position: relative;
+}
+
+p {
+  text-align: center;
+}

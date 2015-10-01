@@ -1,0 +1,141 @@
+/*
+* Author: Adam Lacey / Arturas Lebedevas
+* Assignment: Minor Project – VocabAce
+* Student ID: Adam: D14126301 Arturas:D14126309
+* Date  : 2015/01/25
+*/
+
+.loading-message {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.188em;
+  color: #64C8F1;
+  text-align: center;
+}
+
+.answers {
+  list-style-type: none;
+}
+
+.answers .answer {
+  width: 100%;
+  min-height: 40px;
+  margin: 10px 0;
+  border: none;
+  background-image: url('/image/answer_unselected.png');
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.audio-icon {
+  margin-right: 20px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.life {
+  height: 15px;
+}
+
+.lifes {
+  line-height: 37px;
+}
+
+.incorrect-icon {
+  margin-right: 10px;
+  font-size: 35px;
+}
+
+#game .answers .answer:hover {
+  background-color: transparent;
+  background-image: url('/image/answer_selected.png');
+}
+
+#game .answers .answer:active, #game .answers .answer:focus {
+  box-shadow: none;
+  background-color: transparent;
+  background-image: url('/image/answer_active.png');
+  outline: none;
+}
+
+#game .functionButton {
+  width: 100%;
+  margin: 2rem 0;
+
+  background-color: #D9E040;
+  color: #ffffff;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.188em;
+  text-align: center;
+}
+
+#game .functionButton:focus,
+#game .functionButton:hover,
+#game .functionButton:active {
+  background-color: #f2f2f2;
+  color: #64C8F1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.188em;
+  text-align: center;
+}
+
+.scoreBanner {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
+}
+
+.scoreBox {
+  display: inline-block;
+  width: 200px;
+  border: 3px solid rgb(100, 200, 241);
+  border-radius: 5px;
+  min-height: 200px;
+}
+
+.score {
+  display: inline-block;
+  font-family: 'Amatic SC', cursive;
+  font-size: 7em;
+  color: #64C8F1;
+}
+
+.scoreLabel, .livesLabel {
+  font-family: 'Amatic SC', cursive;
+  padding-right: 10px;
+  font-size: 1.5em;
+}
+
+.introduction {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.score-small {
+  font-size: 2em;
+  font-family: 'Amatic SC', cursive;
+  color: #64C8F1;
+}
+
+.word {
+  font-family: 'Amatic SC', cursive;
+}
+
+.word.word-heading {
+  text-align: center;
+  font-size: 4em;
+}
+
+.explanationCall {
+  margin-top: 1em;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#game .result {
+  text-align: center;
+  color: #64C8F1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 3em;
+}

@@ -1,0 +1,80 @@
+<!--
+* Author: Adam Lacey / Arturas Lebedevas
+* Assignment: Minor Project – VocabAce
+* Student ID: Adam: D14126301 Arturas:D14126309
+* Date  : 2015/01/25
+* Ref:  Font Awesome: http://fortawesome.github.io/Font-Awesome/
+        Bootstrap CSS Framework: http://getbootstrap.com/
+        jQuery: http://jquery.com/
+        Google Fonts: http://www.google.com/fonts
+        Google Translate mp3s: https://translate.google.ie/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vocab Ace | Play to Learn</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/styles/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700|Open+Sans:700,300' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/styles/game.css">
+  <link rel="stylesheet" href="/styles/common.css">
+  <link rel="shortcut icon" type="image/png" href="/image/ace.png">
+</head>
+<body>
+  <div class="supnav container">
+    <div class="row">
+      <div class="col-xs-4">
+        <a href="/" class="logo">
+          <img src="/image/logo.png" alt="Logo">
+        </a>
+      </div>
+      <div class="col-xs-4"></div>
+      <div class="col-xs-4"></div>
+    </div>
+  </div>
+  <nav class="navbar navbar-vocabace">
+    <div class="fluid-container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">Play To Learn</a>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">LOG IN</a>
+          </li>
+          <li>
+            <a href="#">SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="game">
+      <div class="loading-message">Loading...</div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row footerText">
+        <a href="/team.html">
+          Designed by Paragon <span class="blue">2015</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/session.js"></script>
+  <script src="/js/game.js"></script>
+</body>
+</html>

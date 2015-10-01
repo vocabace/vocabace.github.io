@@ -1,0 +1,186 @@
+/*
+* Author: Adam Lacey / Arturas Lebedevas
+* Assignment: Minor Project – VocabAce
+* Student ID: Adam: D14126301 Arturas:D14126309
+* Date  : 2015/01/25
+* Ref: http://getbootstrap.com/css/#grid-media-queries
+*/
+
+.aboutLayout {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+@media (min-width: 768px) {
+  .aboutLayout {
+    font-size: 1em;
+  }
+}
+
+.aboutLayout .heading {
+  font-size: 1.7em;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .aboutLayout .heading {
+    font-size: 2.5em;
+  }
+}
+
+.actions {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.actions > li {
+  display: inline-block;
+}
+
+.actions .button {
+  width: 150px;
+}
+
+@media (min-width: 768px) {
+  .actions .button {
+    min-width: 250px;
+  }
+  .actions > li {
+    margin: 0 15px;
+  }
+}
+
+.description {
+  margin: 0 auto;
+  list-style-type: none;
+  padding: 0;
+}
+
+.description .item {
+  padding: 1em 0;
+}
+
+.description .item p {
+  padding: 0;
+  margin: 0;
+}
+
+.description .item.item-large {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.description .item-left {
+  padding-left: 90px;
+  padding-right: 40px;
+  background-position: 0 50%;
+}
+
+.description .item-left.item-large {
+  padding-left: 150px;
+}
+
+.description .item-left.bald {
+  padding-left: 130px;
+}
+
+@media (min-width: 768px) {
+  .description .item.lightBulb {
+    text-align: center;
+  }
+}
+
+.description .item-left.male {
+  padding-left: 180px;
+}
+
+.description .item-right {
+  padding-left: 40px;
+  padding-right: 90px;
+  background-position: 100% 50%;
+}
+
+.description .item-right.item-large {
+  padding-right: 150px;
+}
+
+.icon {
+  background-repeat: no-repeat;
+}
+
+.icon.lightBulb {
+  background-image: url('/image/lightbulb.png');
+}
+
+.icon.alarmClock {
+  background-image: url('/image/alarmClock.png');
+}
+
+.icon.male {
+  background-image: url('/image/howitworks_head_01.png');
+}
+
+.icon.female {
+  background-image: url('/image/howitworks_head_02.png');
+}
+
+.icon.bald {
+  background-image: url('/image/bald.png');
+  background-size: 135px auto;
+}
+
+.icon.pms {
+  background-image: url('/image/pms.png');
+}
+
+.icon.designers {
+  background-image: url('/image/designers.png');
+}
+
+.icon.coders {
+  background-image: url('/image/coders.png');
+}
+
+.features {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 100px;
+
+  background: url('/image/thunderLeft.png'), url('/image/thunderRight.png');
+  background-position: left 25px center, right 30px center;
+  background-repeat: no-repeat;
+}
+
+.features > li {
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.52em;
+  color: #64C8F1;
+}
+
+@media (min-width: 768px) {
+  .features > li {
+    font-size: 2em;
+  }
+}
+
+.addon {
+  padding: 0 20px;
+}
+
+.get-started {
+  display: block;
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.5em;
+  color: #64C8F1;
+  padding: 0.5em 0;
+}
+
+.get-started:hover {
+  color: #64C8F1;
+  text-decoration: none;
+}

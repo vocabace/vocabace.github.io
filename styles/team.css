@@ -1,0 +1,42 @@
+/*
+* Author: Adam Lacey / Arturas Lebedevas
+* Assignment: Minor Project – VocabAce
+* Student ID: Adam: D14126301 Arturas:D14126309
+* Date  : 2015/01/25
+* Ref: http://stackoverflow.com/questions/9485493/css-floats-change-order-on-mobile-layout
+       http://getbootstrap.com/css/#grid-media-queries
+*/
+
+.team {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.team section h2 {
+  color: #64C8F1;
+  font-family: 'Amatic SC', cursive;
+}
+
+.team section h3 {
+  font-family: 'Amatic SC', cursive;
+}
+
+.team section {
+  clear: both;
+}
+
+.team section .cell {
+  float: none;
+}
+
+@media (min-width: 768px) {
+  .team section .cell.left {
+    float: left;
+    text-align: center;
+  }
+
+  .team section .cell.right {
+    float: right;
+    text-align: center;
+  }
+}
